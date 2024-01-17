@@ -13,5 +13,6 @@ router.get('/id/:id',validarVehiculoID,apiController.apiGetID)
 router.post('/ingresarVehiculo',checkConditions,validarChecksConditions,apiController.apiPost )
 router.put('/editarVehiculo/:id',validarVehiculoID,checkConditions,validarChecksConditions,apiController.apiPut )
 router.delete('/eliminarVehiculo/:id',validarVehiculoID,apiController.apiDelete )
+router.get('/conectarApi',apiController.apiConnect)
 
 module.exports= router;
